@@ -1,43 +1,114 @@
-# AI-Powered Automated Helpdesk
+# AI-Powered Automated Helpdesk System
 
-A cloud-based helpdesk system that uses AI to automatically respond to user queries. The application features a modern UI, MongoDB database for storing conversations and user data, and OpenAI integration for natural language processing.
+A cloud-based helpdesk system with AI capabilities built on Next.js, MongoDB, and OpenAI integration.
 
 ## Features
 
-- AI-powered automated responses to user queries
-- User authentication and account management
-- Admin dashboard for monitoring and managing conversations
-- Knowledge base management
-- Real-time chat interface
-- Ticket management system
+- **Authentication System**: Secure login/register with role-based access control
+- **Ticket Management**: Create, view, update, and close support tickets
+- **AI Chat Integration**: Get instant responses using OpenAI's API
+- **Knowledge Base**: Access and search through support articles
+- **Responsive Design**: Modern UI with Tailwind CSS
 
-## Tech Stack
+## Technology Stack
 
 - **Frontend**: Next.js, React, Tailwind CSS, Headless UI
-- **Backend**: Next.js API routes
+- **Backend**: Next.js API Routes
 - **Database**: MongoDB
-- **AI**: OpenAI API
-- **Authentication**: NextAuth.js
+- **Authentication**: JWT with HTTP-only cookies
+- **AI Integration**: OpenAI API
 
 ## Getting Started
 
+### Prerequisites
+
+- Node.js (v14+)
+- MongoDB (local installation or MongoDB Atlas)
+
+### Installation
+
 1. Clone the repository
-2. Install dependencies with `npm install`
-3. Set up environment variables in `.env.local`
-4. Run the development server with `npm run dev`
-5. Open [http://localhost:3000](http://localhost:3000) in your browser
+   ```
+   git clone https://github.com/YOUR_USERNAME/ai-helpdesk.git
+   cd ai-helpdesk
+   ```
 
-## Environment Variables
+2. Install dependencies
+   ```
+   npm install
+   ```
 
-The following environment variables need to be set:
+3. Create a `.env.local` file in the root directory
+   ```
+   MONGODB_URI=mongodb://localhost:27017/helpdesk
+   NEXTAUTH_URL=http://localhost:3000
+   NEXTAUTH_SECRET=your-super-secret-key-for-next-auth
+   OPENAI_API_KEY=your-openai-api-key
+   ```
+
+4. Initialize the database with sample data
+   ```
+   node scripts/init-db.js
+   ```
+
+5. Start the development server
+   ```
+   npm run dev
+   ```
+
+6. Access the application at http://localhost:3000
+
+### Default Login Credentials
+
+- **Admin User**:
+  - Email: admin@example.com
+  - Password: password123
+
+- **Regular User**:
+  - Email: user@example.com
+  - Password: password123
+
+## Project Structure
 
 ```
-MONGODB_URI=your_mongodb_connection_string
-OPENAI_API_KEY=your_openai_api_key
-NEXTAUTH_SECRET=your_auth_secret
-NEXTAUTH_URL=http://localhost:3000
+ai-helpdesk/
+├── app/                  # Next.js app directory
+│   ├── api/              # API routes
+│   │   ├── auth/         # Authentication endpoints
+│   │   ├── tickets/      # Ticket management
+│   │   └── ai/           # AI integration
+│   ├── dashboard/        # Dashboard pages
+│   ├── login/            # Login page
+│   └── register/         # Registration page
+├── components/           # React components
+├── lib/                  # Utility libraries
+├── models/               # Mongoose models
+├── public/               # Static assets
+└── scripts/              # Setup and utility scripts
 ```
 
 ## Deployment
 
-This application is designed to be deployed to cloud platforms such as Vercel, AWS, or Azure. 
+This application can be deployed to various cloud platforms:
+
+### Vercel (Recommended for Next.js)
+```bash
+npm install -g vercel
+vercel
+```
+
+### AWS
+Configure your AWS credentials and deploy using AWS Amplify or Elastic Beanstalk.
+
+### Azure
+Deploy using Azure App Service or Azure Static Web Apps.
+
+## License
+
+[MIT](LICENSE)
+
+## Acknowledgments
+
+- OpenAI for providing the AI capabilities
+- Next.js team for the amazing framework
+- MongoDB for the flexible database solution 
