@@ -10,6 +10,28 @@ A cloud-based helpdesk system with AI capabilities built on Next.js, MongoDB, an
 - **Knowledge Base**: Access and search through support articles
 - **Responsive Design**: Modern UI with Tailwind CSS
 
+## Screenshots
+
+### Login Screen
+![Login Screen](screenshots/login-screen.png)
+*Secure authentication with email and password*
+
+### Dashboard
+![Dashboard](screenshots/dashboard.png)
+*Overview of tickets, knowledge base articles, and system status*
+
+### Ticket Management
+![Ticket Management](screenshots/ticket-management.png)
+*Create, view, and manage support tickets efficiently*
+
+### AI Chat Interface
+![AI Chat](screenshots/ai-chat.png)
+*Get instant AI-powered responses to customer queries*
+
+### Knowledge Base
+![Knowledge Base](screenshots/knowledge-base.png)
+*Search and browse through help articles and documentation*
+
 ## Technology Stack
 
 - **Frontend**: Next.js, React, Tailwind CSS, Headless UI
