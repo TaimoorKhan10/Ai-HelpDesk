@@ -6,7 +6,7 @@ const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/helpde
 /**
  * Global is used here to maintain a cached connection across hot reloads
  * in development. This prevents connections growing exponentially
- * during API Route usage.
+ * during API Route usage. 
  */
 let cached = global as any;
 if (!cached.mongoose) {
