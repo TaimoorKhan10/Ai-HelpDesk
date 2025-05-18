@@ -7,7 +7,7 @@ Thank you for considering contributing to the AI Helpdesk project! This document
 By participating in this project, you agree to abide by our Code of Conduct. Please be respectful and constructive in your interactions with other contributors.
 
 ## How to Contribute
-
+ 
 ### Reporting Bugs
 
 If you find a bug, please create an issue on GitHub with the following information:
