@@ -1,7 +1,7 @@
 // This script tests and fixes MongoDB connection issues
 const fs = require('fs');
 const mongoose = require('mongoose');
-
+ 
 // Test MongoDB connection
 async function testMongoDBConnection() {
   try {
