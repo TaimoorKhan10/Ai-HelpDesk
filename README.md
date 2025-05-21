@@ -10,7 +10,7 @@ A cloud-based helpdesk system with AI capabilities built on Next.js, MongoDB, an
 - **Knowledge Base**: Access and search through support articles
 - **Responsive Design**: Modern UI with Tailwind CSS
 
-## Screenshots
+
 
 ### Login Screen
 *Secure authentication with email and password*
