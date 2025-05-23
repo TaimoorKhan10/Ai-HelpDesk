@@ -46,7 +46,7 @@ A cloud-based helpdesk system with AI capabilities built on Next.js, MongoDB, an
 
 1. Clone the repository
    ```
-   git clone https://github.com/YOUR_USERNAME/ai-helpdesk.git
+   git clone https://github.com/TaimoorKhan10/ai-helpdesk.git
    cd ai-helpdesk
    ```
 
